@@ -15,7 +15,7 @@ const Header = ({title, mini_title, subtitle}) => {
         >{title}</Typography>
 
     <Typography
-        variant='h3'
+        variant='h4'
         color={colors.grey[100]}
         fontWeight={'bold'}
         sx={{mb: '5px'}}
