@@ -6,7 +6,6 @@ const AddArtist = () => {
     const [name, setName] = useState('');
     const [country, setCountry] = useState('');
     const [avatar, setAvatar] = useState('');
-    // const params = useParams()
     // console.log(params.id);
   
     const handleNameChange = (e) => {
