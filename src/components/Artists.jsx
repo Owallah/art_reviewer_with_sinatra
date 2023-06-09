@@ -12,7 +12,7 @@ const Artists = () => {
     fetch(url)
     .then(response => response.json())
     .then(data => setArtists(data))
-  }, [])
+  }, [artists])
 
   const artist = artists.map(artist => (
     // <Link className='artist_card' to={`/add-art/${artist.id}`}>

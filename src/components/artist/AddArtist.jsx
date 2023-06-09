@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import { useParams } from 'react-router-dom';
 
-const AddArtist = ({setArtists}) => {
+const AddArtist = () => {
 
     const url = 'http://localhost:9292/artists'
     const [name, setName] = useState('');
@@ -37,7 +36,7 @@ const AddArtist = ({setArtists}) => {
         })
       })
       .then(response => response.json())
-      .then(data => setArtists(data))
+      // .then(data => setArtists(data))
       console.log('Artist name:', name);
       console.log('Artist country:', country);
       console.log('Artist avatar URL:', avatar);
